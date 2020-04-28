@@ -2,12 +2,8 @@
 <html>
   <head>
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-  
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <p>To learn more HTML/CSS, check out these <a href="https://neocities.org/tutorials">tutorials</a>!</p>
-    <a-scene>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+      <a-scene>
       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
@@ -18,7 +14,8 @@
               scale="5 5 5"
               position="0 1 -250"  shadow>
           </a-entity>
+    <a-entity collada-model="https://rahulkerur.github.io/testmodel/TR_RvrfntRemd_Central_rahul.dae"></a-entity>
+           
     </a-scene>
   </body>
 </html>
-
