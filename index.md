@@ -1,24 +1,36 @@
+<!DOCTYPE html>
 <html>
   <head>
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-  <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>The web site of rahulkerur</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
   </head>
- 		<body style=’margin : 0px; overflow: hidden;’>
-  <a-scene embedded arjs=’sourceType: webcam;’>
-      <a-marker preset=’hiro’>
-        <!-- Adding an OBJ file to an AR Project-->
-        <a-entity 
-            obj-model=”obj: url(/path/to/nameOfFile.obj); 
-            mtl: url(/path/to/nameOfFile.mtl)”>
-        </a-entity>
-              
-      </a-marker>
-  <a-entity camera>
-  </a-entity>
+  <body>
+    <h1>Welcome to my Website!</h1>
 
+    <p>This is a paragraph! Here's how you make a link: <a href="https://neocities.org">Neocities</a>.</p>
+
+    <p>Here's how you can make <strong>bold</strong> and <em>italic</em> text.</p>
+
+    <p>Here's how you can add an image:</p>
+    <img src="/neocities.png">
+
+    <p>Here's how to make a list:</p>
+
+    <ul>
+      <li>First thing</li>
+      <li>Second thing</li>
+      <li>Third thing</li>
+    </ul>
+
+    <p>To learn more HTML/CSS, check out these <a href="https://neocities.org/tutorials">tutorials</a>!</p>
+    <a-scene>
       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
@@ -27,8 +39,9 @@
       <a-entity
           gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
               scale="5 5 5"
-              position="0 1 -250">
+              position="0 1 -250"  shadow>
           </a-entity>
     </a-scene>
   </body>
 </html>
+
